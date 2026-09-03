@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Are Cats Jerks Survey Form</h1>
+    <p id="description">We are trying to figure out if all cats are jerks, or just ours. Please let us know about your
+        experiences with cats.</p>
+    <fieldset>
+        <legend>Survey Form</legend>
+        <form id='survey-form'>
+            <label for="name" id="name-label">Full Name</label>
+            <input id="name" type="text" placeholder="John Doe" required>
+            <br />
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" name="email" placeholder="your@email.com" required>
+            <br />
+            <label for="number" id="number-label">Phone Number</label>
+            <input id="number" type="number" name="number" placeholder="5555555555" min="0000000000" max="9999999999">
+            <br />
+            <br />
+            <p>What type of cat do you have?</p>
+            <select id="dropdown" type="dropdown" name="cat-breed">
+                <option value="Orange-Tabby">Orange Tabby</option>
+                <option value="Brown-Tabby">Brown Tabby</option>
+                <option value="lack-Tuxie">Black Tuxie</option>
+                <option value="Black">Black</option>
+                <option value="Turtie">Turtie</option>
+            </select>
+            <br />
+            <p>Have you ever been attacked by your cat?</p>
+            <input type="radio" name="cat-attacks" id="yes-option" value="yes">
+            <label for="yes-option">Yes</label>
+            <input type="radio" name="cat-attacks" id="no-option" value="no">
+            <label for="no-option">No</label>
+            <br />
+            <p>Select all that apply</p>
+            <p>What will your cat do for treats?</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="tricks" name="treats" value="tricks">
+                        <label for="tricks">Tricks</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="wake" name="treats" value="wake">
+                        <label for="wake">Wake me up</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="beg" name="treats" value="beg">
+                        <label for="beg">Beg</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="yell" name="treats" value="yell">
+                        <label for="yell">Yell</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="bite" name="treats" value="bite">
+                        <label for="bite">Bite me</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="sweet" name="treats" value="sweet">
+                        <label for="sweet">Be Sweet</label>
+                    </td>
+                </tr>
+            </table>
+
+            <p>Any additional information to prove or disprove that cats <em>are</em> jerks.</p>
+            <textarea placeholder="cats are certainly jerks"></textarea>
+            <br />
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
