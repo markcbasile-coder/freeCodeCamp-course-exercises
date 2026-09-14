@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: teal;
+}
+
+a:active {
+    color: green;
+}
+
+a:focus {
+    color: brown;
+    outline: 3px solid brown;
+
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: black;
+}
+
+.todo-list>li {
+    padding: 5px;
+    background-color: lightblue;
+    margin: 10px;
+    font-family: calibri, sans-serif;
+    font-size: 18px;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+body{
+    background-color: lightyellow;
+
+}
