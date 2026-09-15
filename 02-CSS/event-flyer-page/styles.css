@@ -1,0 +1,49 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: calc(100vh - 100px);
+    width: 98vw;
+    margin: 0px auto;
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-left: 25%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    height: 25vh;
+    width: 15vw;
+}
+
+hr {
+    width: 75%;
+    border-color: black;
+    height: 1.5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+section {
+    width: 85%;
+    text-align: center;
+}
+
+div {
+    margin-left: 15px;
+    padding-left: 2px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+div>h3 {
+    text-align: center;
+}
