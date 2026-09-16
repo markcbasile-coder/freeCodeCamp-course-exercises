@@ -1,0 +1,42 @@
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+    border: 2px solid red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border: 2px solid green;
+}
+
+button:hover {
+    background-color: gray;
+    box-shadow: 0px 5px 10px black;
+}
+
+.radio-group input[type="radio"]:checked {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 2px solid purple;
+    border-color: purple;
+    background-color: lightgreen;
+    box-shadow: 0px 2px 8px rgb(73, 70, 70);
+}
+
+.radio-group input[type="radio"]:checked+label {
+    color: purple;
+}
+
+input:first-of-type {
+    margin-top: 10px;
+}
