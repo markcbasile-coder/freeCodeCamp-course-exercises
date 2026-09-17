@@ -1,0 +1,37 @@
+.form-container {
+    background-color: rgb(64, 150, 159);
+    border-radius: 10px;
+    padding: 0.1rem;
+    width: 95%;
+    text-align: center;
+}
+
+label {
+    margin: 1px 2px;
+    color: rgb(28, 28, 28);
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 1px 2px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    background: rgb(1, 1, 253);
+    color: whitesmoke;
+    font-size: 1.1rem;
+    border: gray;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: navy;
+    color: rgb(242, 255, 0);
+    border: rgb(77, 77, 77);
+    transition: 0.5s ease;
+    border-radius: 5px;
+}
