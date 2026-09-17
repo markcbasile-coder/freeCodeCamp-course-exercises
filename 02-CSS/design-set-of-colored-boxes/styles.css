@@ -1,0 +1,42 @@
+body {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    font-family: calibri, sans-serif;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 5px 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 2px gray;
+}
+
+.color1 {
+    display: inline-block;
+    background-color: #e4129b;
+}
+
+.color2 {
+    display: inline-block;
+    background-color: rgb(200, 5, 5);
+}
+
+.color3 {
+    display: inline-block;
+    background-color: goldenrod;
+}
+
+.color4 {
+    display: inline-block;
+    background-color: hsl(300, 50%, 25%);
+}
+
+.color5 {
+    display: inline-block;
+    background-color: teal;
+}
