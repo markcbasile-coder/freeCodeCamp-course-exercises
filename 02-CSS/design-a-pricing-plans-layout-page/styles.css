@@ -1,0 +1,75 @@
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 200px;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+/*Not included in prompt*/
+.pricing-card:hover {
+    scale: 1.05;
+    border: 2px solid gold;
+    margin: 15px;
+}
+
+.basic-plan {
+    order: 0;
+}
+
+.pro-plan {
+    order: 1;
+    flex-grow: 2;
+}
+
+/*Not included in prompt*/
+.pro-plan:hover {
+    margin: 25px;
+}
+
+.premium-plan {
+    order: 2;
+}
+
+/*Not included in prompt*/
+li {
+    list-style: none;
+}
+
+/*Not included in prompt*/
+li.included::before {
+    color: green;
+    content: "✓";
+    font-weight: bold;
+}
+
+/*Not included in prompt*/
+li.not-included::before {
+    content: "X";
+    color: red;
+    font-weight: bold;
+}
+
+/*Not included in prompt*/
+button {
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    color: rgb(27, 25, 25);
+    background: rgb(73, 182, 218);
+}
+
+/*Not included in prompt*/
+button:hover {
+    scale: 1.02;
+    background: navy;
+    color: whitesmoke;
+}
