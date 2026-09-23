@@ -1,4 +1,4 @@
-main {
+#main {
     background-color: lightgray;
 }
 
@@ -31,8 +31,14 @@ h1 {
     margin: 5px;
 }
 
+#tribute-info {
+    padding: 10px 15%;
+}
+
 #tribute-info>ul>li {
+
     margin: 15px auto;
+
 }
 
 span {
