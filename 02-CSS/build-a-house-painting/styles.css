@@ -1,0 +1,107 @@
+#house {
+    position: relative;
+    top: 85px;
+    left: 350px;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(26, 26, 95);
+    border: 0.5px solid black;
+    z-index: 3;
+}
+
+#house div {
+    position: absolute;
+}
+
+#roof {
+    top: 0;
+    left: -7.5px;
+    height: 190px;
+    width: 510px;
+    background-color: rgb(42, 41, 41);
+    z-index: 4;
+    border: 2px solid black;
+}
+
+#chimney {
+    box-sizing: border-box;
+    top: -90px;
+    left: 355px;
+    height: 90px;
+    width: 75px;
+    background-color: rgb(117, 116, 116);
+    z-index: 2;
+    border: 1px solid black;
+}
+
+#window-1 {
+    top: 223px;
+    left: 355px;
+    height: 75px;
+    width: 75px;
+    background-color: rgb(211, 153, 4);
+    z-index: 4;
+    border: 2px solid black;
+}
+
+#window-2 {
+    top: 223px;
+    left: 55px;
+    height: 75px;
+    width: 75px;
+    background-color: rgb(211, 153, 4);
+    z-index: 4;
+    border: 2px solid black;
+}
+
+#door {
+    box-sizing: border-box;
+    top: 225px;
+    left: 200px;
+    height: 175px;
+    width: 75px;
+    background-color: rgb(211, 153, 4);
+    z-index: 4;
+    border: 2px solid whitesmoke;
+}
+
+#grass {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-color: green;
+    z-index: 1;
+}
+
+#sky {
+    position: absolute;
+    top: -10px;
+    height: 80%;
+    width: 100%;
+    background-color: skyblue;
+    z-index: 1;
+}
+
+#welcome-mat {
+    position: absolute;
+    top: 495px;
+    left: 475px;
+    height: 75px;
+    width: 175px;
+    transform: skew(-35deg);
+    background: linear-gradient(to right, rgb(91, 54, 1) 35%, rgb(59, 35, 1) 100%);
+    z-index: 5;
+    border: 2px solid black;
+}
+
+#words {
+    font-size: 2rem;
+    position: absolute;
+    top: 515px;
+    left: 475px;
+    height: 75px;
+    width: 175px;
+    transform: skew(-35deg);
+    background: transparent;
+    z-index: 5;
+}
