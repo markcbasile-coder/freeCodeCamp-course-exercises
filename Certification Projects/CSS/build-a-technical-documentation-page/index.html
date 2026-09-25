@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>D&D for Begginers</header>
+        <a href="#introduction" class="nav-link">Introduction</a>
+        <a href="#core_rules" class="nav-link">Core Rules</a>
+        <a href="#how_dice_work" class="nav-link">How Dice Work</a>
+        <a href="#the_core_mechanic" class="nav-link">The Core Mechanic</a>
+        <a href="#conditions" class="nav-link">Conditions</a>
+        <a href="#movement" class="nav-link">Movement</a>
+        <a href="#combat" class="nav-link">Combat</a>
+        <a href="#common_actions_in_combat" class="nav-link">Common Actions in Combat</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <p>Welcome to the core rules reference for Dungeons & Dragons. Whether you are stepping into a dungeon for
+                the first time or brushing up on mechanics between sessions, this documentation outlines the fundamental
+                systems required to play the game.</p>
+            <p>Dungeons & Dragons is a tabletop roleplaying game driven by dynamic narrative and strategic
+                decision-making. The game relies on a collaborative framework: the Dungeon Master (DM) crafts the world,
+                controls monsters, and sets challenges, while the players create unique characters to explore that
+                world. When outcomes are uncertain, the rules provided in these sections govern how actions are
+                resolved, how combat flows, and how environmental factors impact your journey.</p>
+        </section>
+
+        <section class="main-section" id="core_rules">
+            <header>Core Rules</header>
+            <p>Dungeons & Dragons is a cooperative tabletop roleplaying game where players create characters and embark
+                on adventures narrated by the Dungeon Master (DM). The gameplay follows a rhythmic loop of descriptions
+                and actions:</p>
+            <ol>
+                <li>The DM describes the environment. The DM sets the scene, detailing where the adventurers are and
+                    what surrounds them.</li>
+                <li>The players describe what they want to do. Players declare actions for their characters, whether
+                    searching a room, talking to an NPC, or swinging a weapon.</li>
+                <li>The DM narrates the results of the adventurers' actions. The DM determines if the action succeeds,
+                    often calling for a die roll to resolve uncertainty.</li>
+            </ol>
+            <p>Players rely on their character sheet, which outlines core statistics, proficiencies, equipment, and
+                health. The six primary ability scores—<code>Strength</code>, <code>Dexterity</code>,
+                <code>Constitution</code>, <code>Intelligence</code>, <code>Wisdom</code>, and
+                <code>Charisma</code>—define a character's capabilities and determine modifiers added to
+                <code>d20</code> rolls.</p>
+        </section>
+
+        <section class="main-section" id="how_dice_work">
+            <header>How Dice Work</header>
+            <p>When the outcome of an action is uncertain, the game relies on polyhedral dice to determine success or
+                failure. The most important die in the game is the twenty-sided die (<code>d20</code>).</p>
+            <ul>
+                <li><span class="bold">Ability Checks:</span> Used when a character attempts a task that requires effort
+                    or skill, such as picking a lock or leaping across a chasm.</li>
+                <li><span class="bold">Saving Throws:</span> Used when a character attempts to resist or avoid an
+                    incoming hazard, such as dodging a fireball or resisting poison.</li>
+                <li><span class="bold">Attack Rolls:</span> Used during combat to determine whether an attack strikes a
+                    target's Armor Class (<code>AC</code>).</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="the_core_mechanic">
+            <header>The Core Mechanic</header>
+            <p>To resolve any <code>d20</code> roll, roll a 20-sided die, add the appropriate ability modifier and
+                relevant proficiency bonus, and compare the total to a target number set by the DM:</p>
+            <ul>
+                <li><span class="bold">Difficulty Class (<code>DC</code>):</span> The target number for ability checks
+                    and saving throws.</li>
+                <li><span class="bold">Armor Class (<code>AC</code>):</span> The target number required to hit a target
+                    with an attack.</li>
+            </ul>
+            <p>If the result equals or exceeds the target number, the attempt succeeds. Rolling a natural 20 on an
+                attack roll automatically hits and deals critical damage, while a natural 1 automatically misses.</p>
+        </section>
+
+        <section class="main-section" id="conditions">
+            <header>Conditions</header>
+            <p>Conditions alter a creature's capabilities in specific ways and can be applied by spell effects, creature
+                abilities, or environmental hazards.</p>
+            <ul>
+                <li><span class="bold">Blinded:</span> A <code>Blinded</code> creature can't see and automatically fails
+                    any ability check that requires sight. Attack rolls against the creature have advantage, and the
+                    creature's attack rolls have disadvantage.</li>
+                <li><span class="bold">Charmed:</span> A <code>Charmed</code> creature can't attack the charmer or
+                    target the charmer with harmful abilities or magical effects. The charmer has advantage on any
+                    ability check to interact socially with the creature.</li>
+                <li><span class="bold">Frightened:</span> A <code>Frightened</code> creature has disadvantage on ability
+                    checks and attack rolls while the source of its fear is within line of sight. The creature can't
+                    willingly move closer to the source of its fear.</li>
+                <li><span class="bold">Paralyzed:</span> A <code>Paralyzed</code> creature is incapacitated and can't
+                    move or speak. The creature automatically fails <code>Strength</code> and <code>Dexterity</code>
+                    saving throws. Attack rolls against the creature have advantage, and any attack that hits the
+                    creature is a critical hit if the attacker is within 5 feet.</li>
+                <li><span class="bold">Prone:</span> A <code>Prone</code> creature's only movement option is to crawl.
+                    The creature has disadvantage on attack rolls. An attack roll against the creature has advantage if
+                    the attacker is within 5 feet; otherwise, the attack roll has disadvantage.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="movement">
+            <header>Movement</header>
+            <p>During exploration or combat, a creature can move up to a distance equal to its <code>Speed</code>
+                attribute (typically 30 feet for most humanoids).</p>
+            <ul>
+                <li><span class="bold">Difficult Terrain:</span> Moving through difficult terrain—such as rubble, deep
+                    snow, steep stairs, or dense undergrowth—costs double movement (2 feet of speed for every 1 foot
+                    traveled).</li>
+                <li><span class="bold">Interruption and Combination:</span> Movement can be broken up before, during,
+                    and after actions on a turn.</li>
+                <li><span class="bold">Special Movement Types:</span>
+                    <ul>
+                        <li><span class="bold">Climbing and Swimming:</span> Each foot of movement costs 1 extra foot (2
+                            extra feet in difficult terrain) unless the creature has a specific climbing or swimming
+                            speed.</li>
+                        <li><span class="bold">Jumping:</span> A long jump allows travel across a distance up to the
+                            character's <code>Strength</code> score if they move 10 feet prior. A high jump clears a
+                            height equal to 3 + <code>Strength</code> modifier feet with a 10-foot running start.</li>
+                    </ul>
+                </li>
+                <li><span class="bold">Standing from Prone:</span> Standing up from a <code>Prone</code> position costs
+                    half of a creature's total movement speed for the turn.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="combat">
+            <header>Combat</header>
+            <p>Combat is structured in turns and rounds. Each round represents approximately 6 seconds of in-game time.
+            </p>
+            <ol>
+                <li><span class="bold">Roll Initiative:</span> At the start of combat, every participant rolls a
+                    <code>d20</code> and adds their <code>Dexterity</code> modifier. Turn order proceeds from highest
+                    initiative to lowest.</li>
+                <li><span class="bold">Take a Turn:</span> On your turn, you can move a distance up to your speed and
+                    take one <code>Action</code>, one <code>Bonus Action</code> (if granted by a feature or spell), and
+                    one <code>Reaction</code> (triggered by specific events during any turn in the round).</li>
+            </ol>
+        </section>
+
+        <section class="main-section" id="common_actions_in_combat">
+            <header>Common Actions in Combat</header>
+            <ul>
+                <li><span class="bold">Attack:</span> Make a melee or ranged attack against a target.</li>
+                <li><span class="bold">Cast a Spell:</span> Cast a spell with a casting time of 1 action.</li>
+                <li><span class="bold">Dash:</span> Gain extra movement for the current turn equal to your
+                    <code>Speed</code>.</li>
+                <li><span class="bold">Disengage:</span> Your movement doesn't provoke opportunity attacks for the rest
+                    of the turn.</li>
+                <li><span class="bold">Dodge:</span> Focus entirely on avoiding attacks. Attack rolls against you have
+                    disadvantage if you can see the attacker, and you make <code>Dexterity</code> saving throws with
+                    advantage.</li>
+                <li><span class="bold">Help:</span> Give an ally advantage on their next ability check or attack roll.
+                </li>
+                <li><span class="bold">Hide:</span> Make a <code>Dexterity (Stealth)</code> check to conceal yourself.
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
