@@ -1,0 +1,100 @@
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25vh;
+    width: 85%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 85%;
+    appearance: none;
+    margin: 25px auto 0;
+    font-size: 1.2rem;
+}
+
+thead {
+    text-align: center;
+    width: 100%;
+    background-color: lightblue;
+}
+
+tr,
+th,
+td {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+
+tr[class="read"] {
+    background-image: linear-gradient(to bottom, rgb(1, 165, 1) 75%, rgb(1, 75, 1) 100%);
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(to bottom, rgb(196, 197, 196) 75%, rgb(88, 89, 88) 100%);
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(to bottom, rgb(204, 188, 62) 75%, rgb(135, 124, 40) 100%);
+}
+
+span {
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 2px solid rgb(101, 1, 1);
+    background-image: linear-gradient(to left, rgb(201, 2, 2) 75%, rgb(142, 1, 1));
+    border-radius: 15px;
+    padding: 5px;
+}
+
+tr[class="read"] span[class="status"] {
+    border: 2px solid rgb(1, 78, 22);
+    background-image: linear-gradient(to left, rgb(3, 174, 48) 75%, rgb(1, 118, 32));
+    border-radius: 15px;
+    padding: 5px;
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 2px solid rgb(99, 94, 1);
+    background-image: linear-gradient(to left, rgb(201, 191, 1) 75%, rgb(145, 138, 1));
+    border-radius: 15px;
+    padding: 5px;
+}
+
+span[class="status"],
+span[class^="rate"] {
+    height: 20px;
+    width: 85%;
+    padding: 2px;
+}
+
+span[class^="rate"]>span {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 1px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+}
+
+span[class~="one"] span:first-of-type {
+    background-image: linear-gradient(to bottom, yellow, gold);
+}
+
+span[class~="two"]>span:nth-child(-n+2) {
+    background-image: linear-gradient(to bottom, yellow, gold);
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(to bottom, yellow, gold);
+}
