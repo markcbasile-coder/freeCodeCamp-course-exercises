@@ -1,0 +1,212 @@
+@media only screen and (max-width: 720px) {
+    body {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-wrap: wrap;
+    }
+
+    #project-section {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        flex-wrap: wrap;
+    }
+
+    #project-section {
+        flex-wrap: wrap;
+    }
+
+    #contact {
+        flex-wrap: wrap;
+    }
+}
+
+:root {
+    /* Brand & Layout Colors */
+    --bg-primary: #0a0f1d;
+    /* Deep Space Blue - Main background */
+    --bg-secondary: #131b2e;
+    /* Rich Navy - Project tiles / cards */
+    --nav-bg: #070a14;
+    /* Dark Midnight Blue - Navbar */
+
+    /* Accent / Pop Colors */
+    --accent-pop: #00d2ff;
+    /* Neon Cyan - Buttons, highlights & hover states */
+    --accent-subtle: #3b82f6;
+    /* Royal Blue - Secondary buttons / borders */
+
+    /* Typography */
+    --text-main: #f8fafc;
+    /* Off-White - Headings & major text */
+    --text-muted: #94a3b8;
+    /* Soft Slate - Paragraphs, subtext & labels */
+    --text-nav: #e2e8f0;
+    /* Crisp White-Blue - Nav links */
+}
+
+#navbar {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+    padding: 5px;
+    margin-right: 2px;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: var(--nav-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#navbar a {
+    color: var(--text-nav);
+}
+
+#navbar a:hover {
+    color: var(--accent-pop);
+}
+
+body {
+    background-color: var(--bg-primary);
+    grid-template-columns: 4;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "welcome welcome welcome welcome"
+        "welcome welcome welcome welcome"
+        "project project project project"
+        "project project project project"
+        "contact contact contact contact"
+        "contact contact contact contact";
+    margin: 5px auto;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-main);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+#welcome-section {
+    grid-area: welcome;
+    margin-top: 0.5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    color: var(--accent-pop);
+}
+
+#project-section {
+    background-color: var(--bg-secondary);
+    grid-area: project;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 20px;
+    width: 85%;
+    max-width: 1200px;
+}
+
+.projects-grid a {
+    text-decoration: none;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--accent-subtle);
+    color: var(--text-main);
+    height: 350px;
+    background-color: var(--nav-bg);
+    font-size: 1.25rem;
+}
+
+.project-tile img {
+    height: 95%;
+    max-width: 80%;
+    margin: 5% auto auto 10%;
+}
+
+#profile-link,
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-pop);
+    color: #070a14;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#contact {
+    text-align: center;
+    border-bottom: 4px solid var(--accent-subtle);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+..contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-details {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-details:hover {
+    transform: translateY(-2px);
+}
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--text-muted);
+    font-size: 1.25rem;
+}
