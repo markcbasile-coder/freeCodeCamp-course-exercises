@@ -185,7 +185,7 @@ h3 {
     padding-bottom: 10px;
 }
 
-..contact-links {
+.contact-links {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
