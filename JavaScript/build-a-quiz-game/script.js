@@ -9,8 +9,8 @@ const questions = [
   {
     category: "HTML",
     question: "Which tag is used to create a hyper-link to another webpage?",
-    choices: ["a", "link", "href"],
-    answer: "a",
+    choices: [`<a>`, `<link>`, `<href>`],
+    answer: `<a>`,
   },
   {
     category: "CSS",
@@ -37,20 +37,32 @@ const questions = [
   },
 ];
 
+let qNum = (randomInt = Math.floor(Math.random() * questions.length));
+let cNum = (randomInt = Math.floor(
+  Math.random() * questions[qNum].choices.length,
+));
+
 function getRandomQuestion(arr) {
-  const randomInt = Math.floor(Math.random() * arr.length);
-  return arr[randomInt];
+  const randomQuestion = arr[qNum].question;
+  return randomQuestion;
 }
 
 function getRandomComputerChoice(arr) {
-  const randomInt = Math.floor(Math.random() * arr.length);
-  return arr[randomInt];
+  const randChoice = arr[qNum].choices[cNum];
+  return randChoice;
 }
 
-function getResults(question, choice) {
-  if (choice === question.answer) {
+function getResults(arr, choice) {
+  if (choice === arr[qNum].answer) {
     return `The computer's choice is correct!`;
   } else {
-    return `The computer's choice is wrong. The correct answer is: ${question.answer}`;
+    return `The computer's choice is wrong. The correct answer is: ${arr[qNum].answer}`;
   }
 }
+
+let question = getRandomQuestion(questions);
+let choice = getRandomComputerChoice(questions);
+
+console.log(question);
+console.log(choice);
+console.log(getResults(questions, choice));
