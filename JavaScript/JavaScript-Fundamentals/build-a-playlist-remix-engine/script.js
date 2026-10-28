@@ -160,4 +160,21 @@ function buildSchedule(arr) {
 }
 
 let builtSchedule = buildSchedule(enforcedArr);
-console.log(builtSchedule);
+
+/*accepts an array of playlists and the maximum number of allowed
+occurrences per artist. The function should return the final
+broadcast schedule as an array of { slot, trackId } objects, by
+calling flattenPlaylists, scoreTracks, dedupeTracks
+ enforceArtistQuota, and buildSchedule in order.*/
+function remixPlaylist(arr, num) {
+  let flat = flattenPlaylists(arr);
+  let score = scoreTracks(flat);
+  let dupe = dedupeTracks(score);
+  let artQuot = enforceArtistQuota(dupe, num);
+  let sched = buildSchedule(artQuot);
+
+  return sched;
+}
+
+let final = remixPlaylist(playlists, 3);
+console.log(final);
