@@ -6,7 +6,7 @@ body {
 h1 {
     background: rgba(130, 126, 126, 0.35);
     width: 75%;
-    justify-self: center;
+    margin: 25px auto 15px;
 
 }
 
