@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    background-image: linear-gradient(90deg, rgb(227, 226, 198), rgb(113, 148, 155));
+}
+
+h1 {
+    background: rgba(130, 126, 126, 0.35);
+    width: 75%;
+    justify-self: center;
+
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(52, 59, 66, 0.5);
+}
+
+#close-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 5rem;
+    background: transparent;
+    border: transparent;
+    color: lightgrey;
+}
+
+#lightbox-image {
+    height: 90%;
+    width: 90%;
+    align-self: center;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+}
